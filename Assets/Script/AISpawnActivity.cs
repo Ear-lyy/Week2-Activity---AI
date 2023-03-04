@@ -10,9 +10,8 @@ public class AISpawnActivity : MonoBehaviour
     public Transform[] patrolPoints;
     public int DestinationPoints = 0;
     public float remDistance = 0.5f;
-    public Transform Player;
+
     public static int score;
-    public float radius;
 
     void Start()
     {
@@ -51,7 +50,6 @@ public class AISpawnActivity : MonoBehaviour
 
             score += 1;
 
-            Debug.Log(score);
             Destroy(gameObject);
 
             return;
